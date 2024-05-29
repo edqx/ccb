@@ -19,7 +19,7 @@ Use the following commands for each of the examples:
 | Example | Command | Credit |
 |-|-|-|
 | Fibonacci | `zig build -Dsource="examples/fibonacci.bf" -Dcell-size=16` | `http://progopedia.com/example/fibonacci/14/` |
-| Hello, World! | `zig build -Dsource="examples/hello-world.bf"` | `https://esolangs.org/wiki/Brainfuck#Hello(comma)_World!` |
+| Hello, World! | `zig build -Dsource="examples/hello-world.bf"` | `https://esolangs.org/wiki/Brainfuck#Hello,_World!` |
 | Hello, World! (Minimal) | `zig build -Dsource="examples/minimal-hello-world.bf" -Dtape-size=256` | `https://codegolf.stackexchange.com/questions/55422/hello-world/163590#163590` |
 | 99 Bottles of Beer | `zig build -Dsource="examples/99-bottles-of-beer.bf` | `https://www.99-bottles-of-beer.net/language-brainfuck-101.html` |
 
