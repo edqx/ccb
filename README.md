@@ -12,7 +12,7 @@ Here are the options you can pass into `zig build`:
 | `-Dsigned-cells` | No | Whether the cells can allow negative values | N/A |
 | `-Dcell-size` | No | The size of the cells in bits for the tape | 8 |
 
-Requires [Zig 0.12.0](https://ziglang.org/download/).
+Requires [the Zig compiler](https://ziglang.org/download/).
 
 ### Examples
 Use the following commands for each of the examples:

@@ -29,7 +29,7 @@ pub fn build(b: *std.Build) void {
     options.addOption(bool, "signedCells", signedCells);
     options.addOption(usize, "cellSize", cellSize);
 
-    exe.root_module.addAnonymousImport("source", .{ .root_source_file = .{ .path = bfPath } });
+    exe.root_module.addAnonymousImport("source", .{ .root_source_file = b.path(bfPath) });
     exe.root_module.addImport("options", options.createModule());
 
     b.installArtifact(exe);
