@@ -32,7 +32,7 @@ inline fn evaluateImpl(comptime CellInt: type, comptime bf: []const u8, tape: []
                     try evaluateImpl(CellInt, bf[start_pos..end_pos], tape, cursor, output_writer, input_reader);
                 }
             },
-            ']' => unreachable,
+            ']' => @compileError("Missing '[' for closing ']'"),
             '.' => try output_writer.print("{c}", .{tape[cursor.*]}),
             ',' => tape[cursor.*] = @as(CellInt, @intCast(try input_reader.readByte())),
             else => {},
